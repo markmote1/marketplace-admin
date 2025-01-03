@@ -1,12 +1,14 @@
-import React from 'react';
+"use client";
 
-const Page: React.FC = () => {
+import { UserButton } from '@clerk/clerk-react';
+ const SetupPage = ()  =>{
     return (
-        <div>
-            <h1>Welcome to the Marketplace Admin</h1>
-            <p>This is the main page of the admin panel.</p>
-        </div>
-    );
-};
+        <div className="p-4">
+          <UserButton afterSignOutUrl="/"/>
 
-export default Page;
+           </div>
+    )
+}
+
+
+export default SetupPage;
