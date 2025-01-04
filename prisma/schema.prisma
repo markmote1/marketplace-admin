@@ -15,11 +15,9 @@ model Store {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  // Example of a relationship (if applicable)
   user      User     @relation(fields: [userId], references: [id])
 }
 
-// Example of another model (if applicable)
 model User {
   id        String   @id @default(uuid())
   email     String   @unique
