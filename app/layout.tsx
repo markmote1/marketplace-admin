@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 
 import { ModalProvider } from "@/providers/modal-provider";
+import {prismadb} from "@/lib/prismadb";
 
 
 const geistSans = Geist({
@@ -26,6 +27,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const stores = await prismadb.store.findMany();
+
+
+
+
   return (
     <ClerkProvider>
       
