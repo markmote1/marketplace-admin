@@ -13,11 +13,7 @@ import { useStoreModal } from "@/hooks/use-store-modal";
         }
     }, [isOpen, onOpen]);
 
-    return (
-        <div className="p-4">
-        Root Page
-           </div>
-    );
+    return null;
 }
 
 

@@ -5,8 +5,7 @@ const DashboardPage = () => {
 
     return (
         <div>
-            <h1>Store Dashboard</h1>
-            <p>Store</p>
+            This is a Dashboard
         </div>
     );
 };
